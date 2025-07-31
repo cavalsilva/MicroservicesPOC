@@ -1,4 +1,4 @@
-iniciar dapr: dapr start
+iniciar dapr: dapr run
 
 parar dapr: dapr stop
 

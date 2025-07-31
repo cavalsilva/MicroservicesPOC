@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMarten(options =>
 {
-    options.Connection("Host=postgres-pedidos;Port=5432;Database=pedidos;Username=postgres;Password=postgres");
+    options.Connection("Host=localhost;Port=5432;Database=pedidos;Username=postgres;Password=postgres");
 
     options.Events.AddEventType(typeof(PedidoCreated));
     options.Events.StreamIdentity = StreamIdentity.AsString;
@@ -17,7 +17,7 @@ builder.Services.AddMarten(options =>
     {
         // Specify a db to which to connect in case database needs to be created.
         // If not specified, defaults to 'postgres' on the connection for a tenant.
-        c.MaintenanceDatabase("Host=postgres-pedidos;Port=5432;Database=postgres;Username=postgres;Password=postgres");
+        c.MaintenanceDatabase("Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=postgres");
 
         c.ForTenant()
             .CheckAgainstPgDatabase()

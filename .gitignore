@@ -50,10 +50,3 @@ App_Data/
 *.msi
 *.msm
 *.msp
-
-contratos/bin
-contratos/obj
-pagamentos-service/bin
-pagamentos-service/obj
-pedidos-service/bin
-pedidos-service/obj

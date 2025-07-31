@@ -1,0 +1,13 @@
+iniciar dapr: dapr start
+
+parar dapr: dapr stop
+
+pedidos-service: dapr run --app-id pedidos-service --app-port 5177 -- dotnet run
+
+pagamentos-service: dapr run --app-id pagamentos-service --app-port 5020 -- dotnet run
+
+terminal: curl -X POST http://localhost:5177/pedidos -H "Content-Type: application/json" -d '{"id":"00000000-0000-0000-0000-000000000001","produto":"Notebook","valor":4500}'
+
+
+docker compose down -v
+docker compose up --build

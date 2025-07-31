@@ -1,0 +1,1 @@
+public record Pedido(Guid Id, string Produto, decimal Valor);

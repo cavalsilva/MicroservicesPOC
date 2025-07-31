@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "gKpu5qPjxq1zVvTkrY5VPHqxbqmFNQGQQ73nLtzhprw=",
+  "Source": "pagamentos-service",
+  "BasePath": "_content/pagamentos-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
